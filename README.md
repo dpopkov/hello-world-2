@@ -11,7 +11,7 @@ Another line created on github.
 classDiagram
     class ICorExec
     <<interface>> ICorExec
-    ICorExec : exec(context: T)
+    ICorExec : exec(context)
     
     class AbstractCorExec
     <<abstract>> AbstractCorExec
