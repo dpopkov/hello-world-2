@@ -21,7 +21,8 @@ classDiagram
     
     ICorExec <|-- AbstractCorExec
     AbstractCorExec <|.. CorWorker
-    note for CorWorker "Одинарный обработчик"
     AbstractCorExec <|.. CorChain
+
+    note for CorWorker "Одинарный обработчик"
     note for CorChain "Цепочка обработчиков, в т.ч. и вложенных chain"
 ```
