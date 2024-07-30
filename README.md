@@ -19,7 +19,7 @@ classDiagram
     class CorWorker
     class CorChain
     
-    ICorExec <|-- ICorWorker
+    ICorExec <|-- AbstractCorExec
     AbstractCorExec <|.. CorWorker
     note for CorWorker "Одинарный обработчик"
     AbstractCorExec <|.. CorChain
