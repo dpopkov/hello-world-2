@@ -10,17 +10,13 @@ Another line created on github.
 ```mermaid
 classDiagram
     class ICorExec
-    <<interface>> ICorExec
     ICorExec : exec(context)
     
     class AbstractCorExec
-    <<abstract>> AbstractCorExec
-    
     class CorWorker
     class CorChain
     
     ICorExec <|-- AbstractCorExec
     AbstractCorExec <|.. CorWorker
     AbstractCorExec <|.. CorChain
-    note for CorChain "Цепочка обработчиков, в т.ч. и вложенных chain"
 ```
