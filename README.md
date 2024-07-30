@@ -9,11 +9,16 @@ Another line created on github.
 
 ```mermaid
 classDiagram
-    class ICorExec
-    ICorExec : exec(context)
+    class ICorExec {
+        +String title
+        +String description
+        +exec(context)
+    }
     
     class AbstractCorExec
+    %% Одинарный обработчик
     class CorWorker
+    %% Цепочка обработчиков, в т.ч. и вложенных chain
     class CorChain
     
     ICorExec <|-- AbstractCorExec
